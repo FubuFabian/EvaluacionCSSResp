@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main-body{
+	background-color:  #d5c75f; 
+	display: flex;
+	flex-flow: wrap row;
+}
+
+#main-body img{
+	margin: 20px 5%;
+	width: 90%;
+}
+
+#blur{
+	filter: blur(10px);
+}
+
+.gris{
+	filter: grayscale(100%);
+}
+
+#sepia{
+	filter: sepia(90%);
+}
+
+a[href*="index"]{
+	text-decoration: underline;
+}
+
+a[href*="paisajes"]{
+	text-decoration: none;
+}
+
+@media (min-width:601px){
+	
+	#main-body .col{
+		margin: 0 5%;
+		width: 22%;
+	}
+}
+
+@media (max-width:600px){
+	
+	#main-body .col{
+		margin: auto 5%;
+		width: 90%;
+	}
+}
+
+
+

@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family: DancingScript;
+	src: url(../Fonts/DancingScript-Regular.ttf);
+}
+
+*:before,
+*:after{
+	webkit-box-sizing : border-box;
+	moz-box-sizing : border-box;
+	ms-box-sizing : border-box;
+	sizing : border-box;
+}
+
+body{
+	font-family: DancingScript;
+	max-width: 900px; 
+	margin: 0 auto;
+	color: white;
+	background-color: #02010A;
+}
+
+header{
+	font-size: 1.2em;
+	background-color: #5b7989;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	flex-flow: wrap row;
+	-webkit-animation: bounce 1s;
+	animation: bounce 1s;
+}
+
+a{
+	color: white;
+}
+
+a[href*="index"]{
+	text-decoration: none;
+}
+
+#nombre{
+	text-align: center;
+
+}
+
+#nombre > h1{
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+#primary-nav{
+	vertical-align: center;
+	text-align: center;
+}
+
+#primary-nav ul > li{
+	list-style: none;
+	margin: 0 5px;
+	display: inline;
+}
+
+#main-body{
+	display: flex;
+	flex-flow: column;
+}
+
+
+img{
+	box-shadow: 2px 2px 2px black; 
+}
+
+#central{
+	background-color: #82c3a6;
+	margin: 0;
+}
+
+#central img{
+	width: 80%;
+	margin: 3% 10%;
+}
+
+#secundaria{
+	margin: 0;
+	text-align: center;
+	background-color: #d5c75f;
+	display: flex;
+	flex-flow: wrap row;
+}
+
+#secundaria img{
+	width: 80%;
+	margin: 3 10%;
+}
+
+#paisajesImg{
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#paisajesImg:hover{
+	-webkit-transform: rotate(-10deg);
+	-o-transform: rotate(-10deg);
+	transform: rotate(-10deg);
+}
+
+#retratosImg{
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#retratosImg:hover{
+	-webkit-transform: translate(20px,-5px);
+	-o-transform: translate(20px,-5px);
+	transform: translate(20px,-5px);
+}
+
+footer{
+	color: #02010A;
+	background-color: #c6d5c5;
+	display: flex;
+	flex-flow: wrap row;
+	border-radius: 0 0 10px 10px;
+}
+
+footer section{
+	margin-left: 10px;
+}
+
+footer section > ul{
+	list-style: none;
+}
+
+footer section > ul img{
+	box-shadow: none;
+}
+
+@media (max-width:600px) {
+
+	section{
+		width: 100%;
+	}
+	
+}
+
+@media (min-width: 601px) {
+	
+	#secundaria article{
+		width: 50%;
+	}
+	
+	#nombre{
+		width: 50%;
+	}
+	
+	#primary-nav{
+		width: 50%;
+	}
+	
+	footer section{
+		width: 23%;
+	}
+	
+}
+
+@-webkit-keyframes bounce{
+	0%{
+		margin-top: 150%;
+	}
+	60%{
+		margin-top: -5%;
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
